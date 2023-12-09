@@ -11,16 +11,41 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="icon" type="image/x-icon" href="./girl.jfif">
   </head>
   <body>
-    
-    <i class="fa-solid fa-phone-volume"></i><p>
-      Lorem ipsum dolor sit amet &nbsp; &nbsp; consectetur  adipisicing elit. Minima, beatae.
-      <i class="fa-solid fa-heart"></i>
-      
+    <h1>My form</h1>
+    <form action="file.txt" method="get"> 
+      <input type="hidden" name="ak" value="lavdya ">
+      <label for="file">choose file</label>
+      <input type="file" name="file" id="file" disabled>
+        <p>H<sup>2</sup>O hello this fields are mandatory H<sub>2</sub>O</p>
+      <div>
+        <label for="fname ">enter name :</label>
+        <input type="text" name="fname" id="fname" required>
+      </div><br>
+      <div>
+        <input type="checkbox" name="langauge" id="check" value="HTML">
+        <label for="check">HTML</label>
+        <input type="checkbox" name="langauge" id="check" value="CSS" >
+        <label for="check">CSS</label>
+      </div>
+     <label for="veh">Select Vehical :</label>
+     <select name="Vehical" id="veh" multiple>
+      <optgroup label="Bikes">
+        <option value="r15">R15</option>
+        <option value="bullet">Bullet</option>
+        <option value="ktm">KTM 200</option>
 
-
-    </p>&gt; 
-    <h1 class='far'>&#xf596;</h1>
+      </optgroup>
+      <optgroup label="Cars">
+          <option value="BMW">BMW</option>
+          <option value="AUDI">AUDI</option>
+          <option value="Benz">Benz</option>
+      </optgroup>
+     </select>
+     
+      <input type="submit">
+    </form>
   </body>
 </html>
