@@ -1,15 +1,19 @@
 *{
     box-sizing: border-box;
     margin: 0px;
-    padding: 0px;
+    padding: 4px;
 }
 header{
     display: flex;
     justify-content: space-between;
-    background-color: navajowhite;
+    background-color: var(--ashok);
     position: sticky;
     top: 0px;
     width: 100%;
+    z-index: 1000;
+}
+body{
+    --ashok:navajowhite;
 }
 .menu ul li{
 display: inline-block;
@@ -22,7 +26,7 @@ margin: 5px;
 }
 .menu ul li{
     transition: all 3s ease-in;
-    transition-delay: 5s;
+    /* transition-delay: 5s; */
 }
 a:hover{
     color: red;
@@ -31,9 +35,10 @@ a:hover{
 background-color: orange;
 } */    
 .menu ul li:hover{
-background-color: pink;
+/* background-color: pink;
 color: white;
-height: 80px;
+height: 80px; */
+transform:translate(-100%)
 }
 .img1{
     /* margin-top: 50px; */
@@ -41,7 +46,11 @@ width: 200px;
 height: 200px;
 }
 figure{
-    float: left;
+    float: right;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    /* align-items: center; */
 }
 .data p:nth-last-child(1){
     background-color: skyblue;
@@ -56,9 +65,82 @@ input:focus{
 .firstpara::first-letter{
     font-size: 40px;
 }
-h2{
+.h2{
     text-align: center;
     text-transform: uppercase;
     font-size: 50px;
     /* box-shadow: 2px 2px 2px 2px black; */
+}
+#ball{
+    background-color: skyblue;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    transition: all 2s ease;
+    top: 0;
+    left: 0;
+}
+#ball:hover{
+    background-color: orange;
+    height: 100px;
+    width: 100px;
+    bottom: 0;
+    right: 0;
+}
+@keyframes Ashok {
+    from{
+
+    }to{
+        
+    }
+}
+
+.btn1{
+    display: flex;
+    justify-content: center;
+   
+
+}
+
+.main{
+    height: 80vh;
+    width: 100vw;
+    /* display: flex;
+    justify-content: space-between; */
+}
+.main div{
+    padding: 50px 20px;
+    height: 100%;
+}
+.main1{
+
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0 100px;
+}
+.main div h2{
+    font-size:xx-large;
+}
+.front{
+    font-size: xx-large;
+}
+.right img{
+    filter:contrast(0.8);
+}
+
+@media((min-width:480px) and (max-width:680px)){
+.right{
+    display: none;
+
+}
+body{
+    background-color: rgb(235, 135, 197);
+}
+}
+.p{
+    /* padding: 20px; */
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    padding: 0 20px 0 20px;
 }

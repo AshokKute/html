@@ -1,0 +1,98 @@
+@import url('https://fonts.google.com/specimen/Montserrat');
+
+*{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex   ;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+.left{
+    background-color: hsl(30, 38%, 92%);
+}
+.main{
+    display: flex;
+    width: auto;
+    border-radius: 10px;
+    height: 500px;
+    width: 50vw ;
+    border: 2px solid white;
+    background-color: white;
+}
+.main div{
+    /* width: fit-content  ; */
+    height: 100%;
+    width: 100%;
+}
+.img{
+    object-fit: fill;
+    height: inherit;
+    width: inherit;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.price{
+    color:hsl(158, 36%, 37%);
+    display: inline;
+}
+h1{
+    font-size: 46px;
+}
+code{
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+p{
+    line-height: 20px;
+}
+.right{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.btnn{
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+}
+a{
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+}
+.prices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.btnclass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media(max-width:798px){
+   
+    .main{
+        flex-direction: column;
+        background-color:hsl(30, 38%, 92%) ;
+        border: none;
+    }
+    .img{
+        border-radius: 10px;
+    }
+    
+}
+@media(min-width:798){
+    .btnclass{
+        margin-top: 5px!important;
+    }
+}
