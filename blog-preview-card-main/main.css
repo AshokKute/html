@@ -1,0 +1,25 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: skyblue;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    body div{
+        display: flex;
+        align-items: center;
+    }
+.container{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: yellow;
+    height: 500px;
+    width: 500px;
+
+}
